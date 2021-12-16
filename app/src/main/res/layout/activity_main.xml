@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="kaydet"
+        android:text="KAYDET"
+        app:layout_constraintBottom_toTopOf="@+id/sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yasGöster" />
+
+    <TextView
+        android:id="@+id/yasGöster"
+        android:layout_width="253dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:text="Senin Yaşın:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yasGir" />
+
+    <EditText
+        android:id="@+id/yasGir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Yaş Giriniz"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/yasGöster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="108dp"
+        android:onClick="sil"
+        android:text="SİL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaydet" />
+</androidx.constraintlayout.widget.ConstraintLayout>
